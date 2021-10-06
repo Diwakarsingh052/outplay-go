@@ -4,10 +4,9 @@ import "fmt"
 
 func main() {
 	i := []int64{54, 67, 89, 600, 800, 500}
-	b := i[1:4:4]
-	b[0] = 999 // this will still affect the parent slice or backing array
+	b := i[1:4:4] // setting slice cap max-index
+	b[0] = 999    // this will still affect the parent slice or backing array
 	b = append(b, 300)
-
 
 	inspectSlice("i", i)
 	inspectSlice("b", b)
