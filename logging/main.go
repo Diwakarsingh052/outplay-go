@@ -33,7 +33,7 @@ func main() {
 			for {
 
 				l.Println(fmt.Sprintf("%d: log data", id))
-
+				time.Sleep(200 * time.Millisecond)
 			}
 
 		}(i)

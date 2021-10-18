@@ -1,0 +1,17 @@
+Q. Create a package that expects some data and convert that data in JSON. Please return json back to the user.
+
+
+Q. Create a slice name with 10 elements
+    - use slicing concept and slice the name slice to new slice data from 2nd to 5th index
+    - change data[3] to new value. Print name and data slices.
+    - append one new name to data slice and print both slices.
+    - use max concept in slicing to prevent value changes in name slice.
+    - use max concept and try to create capacity of 20 in data slice. Panic will occour. Try to understand reason.
+ 
+
+Q. Implement Modified Fanout pattern. Do get request to 7 urls and you can process maximum  3 urls at a time.
+
+Q- Imagine you have a store where you sell books, games and movies. Whenever customer comes in your shop he ask for what is discount available and also the final price after  all taxes. Customer can purchase multiple things at once too.
+
+   Your task is to create methods that can help you to achieve above task. Think about how you can use interfaces in this problem.
+

@@ -15,12 +15,13 @@ func New(w io.Writer, cap int) *logger {
 		ch: make(chan string, cap),
 	}
 
-	go func() {
-		for v := range l.ch {
-			fmt.Fprintln(w, v)
-		}
+		go func() {
+			for v := range l.ch {
+				fmt.Fprintln(w, v)
+			}
 
-	}()
+		}()
+
 	return &l
 }
 
