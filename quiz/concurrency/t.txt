@@ -1,0 +1,2 @@
+ch <- "Adding work here" // when this statement will block when channel is buffered
+send in unbuffered channel should never happen in main as it cannot send anything if receiver is not ready and it will block forever
