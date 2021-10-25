@@ -27,7 +27,7 @@ func openFile(fileName string) (*os.File, error) {
 	//wrapedError := fmt.Errorf("just checking on errors")
 
 	if err != nil {
-		return nil, fmt.Errorf("%v :: %v", err, ErrFolderNotFound) // %w is wrapping of the error // only one error could be wrapped at a time
+		return nil, fmt.Errorf("%v :: %w", err, ErrFolderNotFound) // %w is wrapping of the error // only one error could be wrapped at a time
 	}
 	return f, nil
 }
