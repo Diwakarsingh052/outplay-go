@@ -3,7 +3,7 @@ package users
 import (
 	"fmt"
 	"net/http"
-	appErr "user-app/apErr"
+	appErr "user-app/appErr"
 )
 
 type User struct {
