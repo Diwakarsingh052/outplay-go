@@ -1,0 +1,41 @@
+type Video{
+    id : Int!
+    tile: String!
+    url : String!
+    author: User!
+}
+
+
+type User{
+    id : Int!
+    name : String!
+}
+
+
+type Post {
+    email: String!
+    text: String!
+    name: String!
+}
+
+type Query{
+    videos : [Video!]!
+
+}
+
+input NewVideo{
+    title : String!
+    url : String!
+    userId: Int!
+}
+
+input NewPost{
+    text: String!
+}
+type Mutation {
+    createVideo(input:NewVideo!) : Video!
+    createPost(input: NewPost!): Post!
+
+
+}
+

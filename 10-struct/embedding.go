@@ -8,7 +8,7 @@ type user struct {
 }
 
 type admin struct {
-	user // not embedding
+	user
 	role []string
 }
 
